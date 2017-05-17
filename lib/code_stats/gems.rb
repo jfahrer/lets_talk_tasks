@@ -1,10 +1,10 @@
 module CodeStats
-  class Gemfile
+  class Gems
     def initialize(gemfile = './Gemfile')
       @gemfile = gemfile
     end
 
-    def gem_count
+    def count
       content = File.read(@gemfile)
       matches = content.scan(/^\s*gem\s/)
       matches.size

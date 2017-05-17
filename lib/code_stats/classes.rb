@@ -1,5 +1,5 @@
 module CodeStats
-  class Class
+  class Classes
     def initialize(path = '.')
       @path = File.join(File.expand_path(path), '**/*.rb')
     end
